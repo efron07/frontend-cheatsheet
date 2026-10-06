@@ -1,0 +1,97 @@
+site_name: Frontend Cheat Sheet
+site_description: JavaScript → TypeScript → Tailwind → React → Next.js, with practical examples from a pharmacy system (PharmaCare)
+site_author: Efron Damasco
+site_url: https://efron07.github.io/frontend-cheatsheet/
+repo_url: https://github.com/efron07/frontend-cheatsheet
+repo_name: efron07/frontend-cheatsheet
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-night, name: Switch to dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-sunny, name: Switch to light mode }
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - JavaScript:
+      - 1. Basics: 01-js-basics.md
+      - 2. Control flow & functions: 02-js-functions.md
+      - 3. Working with data: 03-js-data.md
+      - 4. Prototypes, classes, modules: 04-js-objects-modules.md
+      - 5. Asynchronous JS: 05-js-async.md
+      - 6. JS in the browser: 06-js-browser.md
+  - TypeScript:
+      - 7. Basics: 07-ts-basics.md
+      - 8. Shaping data: 08-ts-shaping-data.md
+      - 9. Generics & advanced types: 09-ts-generics.md
+  - Styling:
+      - 10. HTML & CSS: 10-html-css.md
+      - 11. Tailwind CSS: 11-tailwind.md
+  - React:
+      - 12. Fundamentals: 12-react-fundamentals.md
+      - 13. State & events: 13-react-state.md
+      - 14. Hooks: 14-react-hooks.md
+      - 15. Architecture: 15-react-architecture.md
+      - 16. Forms, UI, performance, testing: 16-react-forms-testing.md
+  - Next.js:
+      - 17. Fundamentals & routing: 17-next-routing.md
+      - 18. Server & Client Components: 18-next-rendering.md
+      - 19. Data fetching & caching: 19-next-data.md
+      - 20. Server Actions & Route Handlers: 20-next-mutations.md
+      - 21. Proxy, auth, env, assets: 21-next-proxy-auth.md
+      - 22. Data layer & deployment: 22-next-deploy.md
+  - SEO & Performance:
+      - 23. SEO: 23-seo.md
+      - 24. Performance: 24-performance.md
+  - Toolkit:
+      - 25. Web, Git, packages, build tools: 25-toolkit-web-git.md
+      - 26. Testing, security, a11y, PWA: 26-toolkit-testing-security.md
+  - 27. Quick reference: 27-quick-reference.md
